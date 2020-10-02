@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run PowerShell Hello World script
-        with:               
-          run: .\$GITHUB_WORKSPACE\entrypoint.ps1
+        uses:               
+          .\$GITHUB_WORKSPACE\entrypoint.ps1
