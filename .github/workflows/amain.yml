@@ -1,6 +1,13 @@
 name: Hello World script
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    # To invoke this action from portal
+    inputs:
+      action:
+        description: "Action to trigger pull"
+        required: true
+        default: "pull"
 
 jobs:
   hello-world-script:
