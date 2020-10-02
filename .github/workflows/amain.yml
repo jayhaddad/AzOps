@@ -1,6 +1,6 @@
 name: Hello World script
 
-on: [repository_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   hello-world-script:
