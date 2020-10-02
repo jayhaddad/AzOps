@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     # To invoke this action from portal
     inputs:
-      action:
-        description: "Action to trigger pull"
+      name:
+        description: 'Person to greet'
         required: true
-        default: "pull"
+        default: 'Mona the Octocat'
 jobs:
   hello-world-script:
 
