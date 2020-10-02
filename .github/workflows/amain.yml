@@ -10,11 +10,8 @@ on:
         default: 'Mona the Octocat'
 jobs:
   hello-world-script:
-
-    runs-on: windows-latest
-
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Run PowerShell Hello World script
-      if: github.event.action == 'script'
-      run: pwsh -command ".\$GITHUB_WORKSPACE\entrypoint.ps1"
+      - name: Run PowerShell Hello World script
+        with:               
+          run: .\$GITHUB_WORKSPACE\entrypoint.ps1
