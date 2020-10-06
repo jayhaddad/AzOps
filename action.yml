@@ -7,5 +7,6 @@ inputs:
     required: true
 runs:
   using: "composite"
-  shell: pwsh
-  run: .\entrypoint.ps1
+  steps:
+    shell: pwsh
+    run: .\entrypoint.ps1
