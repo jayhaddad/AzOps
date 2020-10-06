@@ -9,4 +9,4 @@ runs:
   using: "composite"
   steps:
     - run: .\entrypoint.ps1
-    shell: pwsh
+    shell: powershell
