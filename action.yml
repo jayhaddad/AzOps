@@ -8,5 +8,5 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - run: .\entrypoint.ps1
     shell: pwsh
-    run: .\entrypoint.ps1
