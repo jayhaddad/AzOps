@@ -5,11 +5,11 @@ inputs:
   mode:
     description: "AzOps Mode"
     required: true
-runs-on: windows-latest
+
 runs:
   using: "composite"
   steps:
-    - run: pwsh -command ".\${{ github.workspace	}}\entrypoint.ps1"
-    shell: cmd
+    - run: $GITHUB_ACTION_PATH/entrypoint.ps1
+    shell: pwsh
     
       
