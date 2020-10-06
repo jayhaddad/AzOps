@@ -9,5 +9,6 @@ runs:
   using: "composite"
   steps:
     - name: load
-      run: ${{ github.workspace	}}\entrypoint.ps1
       shell: powershell
+      run: ${{ github.workspace	}}\entrypoint.ps1
+      
