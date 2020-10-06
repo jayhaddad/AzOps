@@ -6,8 +6,6 @@ inputs:
     description: "AzOps Mode"
     required: true
 runs:
-  using: "docker"
-  image: "docker://jbond1983/jazops:latest"
-branding:
-  icon: "sunrise"
-  color: "green"
+  using: "composite"
+  shell: pwsh
+  run: .\entrypoint.ps1
