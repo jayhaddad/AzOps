@@ -5,10 +5,10 @@ inputs:
   mode:
     description: "AzOps Mode"
     required: true
+runs-on: windows-latest
 runs:
   using: "composite"
   steps:
-    - name: load
-      shell: powershell
-      run: ${{ github.workspace	}}\entrypoint.ps1
+    - name: run script
+      run: pwsh -command ".\${{ github.workspace	}}\entrypoint.ps1"
       
