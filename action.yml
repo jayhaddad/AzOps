@@ -9,7 +9,7 @@ runs-on: windows-latest
 runs:
   using: "composite"
   steps:
-    - name: run script
+    - run: pwsh -command ".\${{ github.workspace	}}\entrypoint.ps1"
     shell: cmd
-    run: pwsh -command ".\${{ github.workspace	}}\entrypoint.ps1"
+    
       
