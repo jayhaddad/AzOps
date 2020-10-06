@@ -10,6 +10,6 @@ runs:
   using: "composite"
   steps:
     - run: $GITHUB_ACTION_PATH/entrypoint.ps1
-    shell: pwsh
+    shell: powershell
     
       
