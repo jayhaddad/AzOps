@@ -8,5 +8,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: .\entrypoint.ps1
-    shell: powershell
+    - name: load
+      run: .\entrypoint.ps1
+      shell: powershell
