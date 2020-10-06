@@ -5,11 +5,8 @@ inputs:
   mode:
     description: "AzOps Mode"
     required: true
-
 runs:
   using: "composite"
   steps:
     - run: $GITHUB_ACTION_PATH/entrypoint.ps1
     shell: powershell
-    
-      
