@@ -8,9 +8,6 @@ inputs:
 runs:
   using: "docker"
   image: "docker://jhexpc.azurecr.us/hello-world"
-  with:
-     username: ${{ secrets.ACR_ADMINUSERNAME }}
-     password: ${{ secrets.ACR_PASSWORD }}
 branding:
   icon: "sunrise"
   color: "green"
