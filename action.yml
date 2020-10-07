@@ -6,7 +6,5 @@ inputs:
     description: "AzOps Mode"
     required: true
 runs:
-  using: "composite"
-  steps:
-    - run: entrypoint.ps1
-    shell: powershell
+  container:
+    image: jhexpc.azurecr.us/hello-world
