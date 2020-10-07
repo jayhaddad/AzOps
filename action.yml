@@ -6,8 +6,10 @@ inputs:
     description: "AzOps Mode"
     required: true
 runs:
-  using: "docker"
-  image: "docker://jbond1983/jazops:latest"
+  using: "composite"
+  steps:
+    - run: docker run jhexpc.azurecr.us/hello-world
+    shell: bash
 branding:
   icon: "sunrise"
   color: "green"
