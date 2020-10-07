@@ -7,7 +7,7 @@ inputs:
     required: true
 runs:
   using: "docker"
-  image: "docker://jhexpc.azurecr.us/hello-world
+  image: "docker://jhexpc.azurecr.us/hello-world"
 branding:
   icon: "sunrise"
   color: "green"
