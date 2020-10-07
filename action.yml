@@ -9,7 +9,7 @@ runs:
   using: "composite"
   steps:
     - run: docker run jhexpc.azurecr.us/hello-world
-    shell: bash
+    - shell: bash
 branding:
   icon: "sunrise"
   color: "green"
